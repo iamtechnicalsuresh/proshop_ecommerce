@@ -1,0 +1,27 @@
+{
+  "name": "proshopmernecommerce",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Pro Shop Ecommerce MERN ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run dev\" \"npm run client\""
+  },
+  "author": "Suresh Thapa",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "concurrently": "^6.0.2",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.5.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.5",
+    "morgan": "^1.10.0",
+    "validator": "^13.6.0"
+  }
+}
