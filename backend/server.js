@@ -2,11 +2,9 @@ import app from "./app.js";
 import connectDB from "./configs/db.js";
 import dotenv from "dotenv";
 import colors from "colors";
-import morgan from "morgan";
 
 // Middlewares
 dotenv.config();
-app.use(morgan("dev"));
 
 // Database Connection
 connectDB();
